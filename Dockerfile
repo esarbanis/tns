@@ -2,6 +2,9 @@ FROM java
 
 MAINTAINER Efthymios Sarmpanis
 
+
+RUN apt-get update && apt-get install -y lib32stdc++6 lib32z1 lib32ncurses5 g++ ant python make
+
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get install -y nodejs
 
 # download and extract android sdk
