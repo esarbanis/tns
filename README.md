@@ -30,3 +30,10 @@ Once you have setup your system as described above run the following commands:
 tns build android
 adb install ./platforms/android/build/outputs/apk/<APP_NAME>.apk
 ```
+
+## Enable Gradle Daemon
+Append the following line to <WORK_DIR>/gradle:
+
+```
+org.gradle.daemon=true
+```
